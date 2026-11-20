@@ -1090,7 +1090,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 598904021}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 817528327}
+        m_TargetAssemblyTypeName: CharacterAnimationViewer, Assembly-CSharp
+        m_MethodName: ToggleCharacterSelection
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument:
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &598904021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1392,9 +1404,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 078e24e95331af94da8bde63e0702d9f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 817528326}
-    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 078e24e95331af94da8bde63e0702d9f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 817528327}
   m_SourcePrefab: {fileID: 4843985084834002234, guid: 078e24e95331af94da8bde63e0702d9f, type: 3}
 --- !u!4 &817528324 stripped
 Transform:
@@ -1434,7 +1443,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 817528325}
+  m_GameObject: {fileID: 869698385}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbf1ad93b3a6dba408fbfcd6e0bdd840, type: 3}
@@ -1442,6 +1451,140 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 817528326}
   statusText: {fileID: 220866711}
+  characterNameText: {fileID: 1215107509}
+  selectButton: {fileID: 598904020}
+  actionLabels:
+  - {fileID: 2072435142}
+  - {fileID: 1327694246}
+  - {fileID: 1681912742}
+  - {fileID: 1669126153}
+  framesPerSecond: 60
+  basic:
+  - sprite: {fileID: 8223936414166989962, guid: 50d5ed932b6afe942a2e017ae2c21492, type: 3}
+    frames: 7
+  - sprite: {fileID: 5310151227044863504, guid: b4cd0648b41efbe4692ae499332b67a6, type: 3}
+    frames: 7
+  - sprite: {fileID: -513503925374558000, guid: 2b110648c00eca94882d23586ab4f4dc, type: 3}
+    frames: 7
+  - sprite: {fileID: -6963552442130116781, guid: 944b10749339f2d4bb9cb0de6e7c97d4, type: 3}
+    frames: 7
+  - sprite: {fileID: 9206981523635459393, guid: 269f765b56f642249bbd88fc1f2c787f, type: 3}
+    frames: 7
+  - sprite: {fileID: -6894095125394880453, guid: 1316ec9f98a60ea4c8a54e3383d1665e, type: 3}
+    frames: 7
+  stanby:
+  - sprite: {fileID: 6578308579237764308, guid: 07149d02dc2f60b40aef0cd9a4b60fee, type: 3}
+    frames: 7
+  - sprite: {fileID: -1783861661624219790, guid: 2aceb489001bc8a4c894761fb4e44cd7, type: 3}
+    frames: 7
+  - sprite: {fileID: -2845415997148146042, guid: 58c0e5a2d5ae5fa479abb6658b5f9a8f, type: 3}
+    frames: 7
+  - sprite: {fileID: 1459760130922117585, guid: 7e1f2b9968fcc154890b2bc56aeae7f7, type: 3}
+    frames: 7
+  - sprite: {fileID: -8041758587280517169, guid: 779fafd44e2fbdc45b2858ef48ef9afe, type: 3}
+    frames: 7
+  - sprite: {fileID: -1419143234739108092, guid: 6811057c73b03174c8eb1254bd1c5236, type: 3}
+    frames: 7
+  - sprite: {fileID: 8114689701423086595, guid: 37dd692b0a4481f4a9941d7452319350, type: 3}
+    frames: 7
+  hold:
+  - sprite: {fileID: -5072912881366975560, guid: 7a92423d2a3ec55419e3abcdc8aa700a, type: 3}
+    frames: 7
+  - sprite: {fileID: 4234636527419391902, guid: 6276dd7a38bc0e34bbfca42ce2a7fa49, type: 3}
+    frames: 7
+  - sprite: {fileID: 2442067862995712589, guid: e48b89ac24e11254dbfb530df28d6e7e, type: 3}
+    frames: 7
+  - sprite: {fileID: -1139333944030710005, guid: a784eac5059d2174da07ab37f655be5d, type: 3}
+    frames: 7
+  - sprite: {fileID: -4872811019920630904, guid: dd53ce559c2538740a1f488690b2eb7e, type: 3}
+    frames: 7
+  - sprite: {fileID: -5011590264374729768, guid: 5c93d3fa9b4b1f44eb1845b1e22417dc, type: 3}
+    frames: 7
+  fire:
+  - sprite: {fileID: 1739482593782898506, guid: 25aebe1e262b7f14e963740985f03518, type: 3}
+    frames: 7
+  - sprite: {fileID: -2665174018458775076, guid: 6fdffef1f1fe6254189e542fea51cd6b, type: 3}
+    frames: 7
+  - sprite: {fileID: -3440924375224727414, guid: 9c052dc4f1a4c9e40a6f2f5370309b01, type: 3}
+    frames: 7
+  - sprite: {fileID: -3219984420057439035, guid: 4610f8988aacdab459080c9f9204d6b4, type: 3}
+    frames: 7
+  - sprite: {fileID: 1880224299847183988, guid: 0da58c742e8ca1148bf946ce5d07457c, type: 3}
+    frames: 7
+  rosalynScale: 0.35
+  rosalynPosition: {x: 0, y: 0.1, z: 0}
+  dandoBasic:
+  - sprite: {fileID: 6802055299824166962, guid: 991f3a4057c4fcd4cab700a0b93dfca7, type: 3}
+    frames: 7
+  - sprite: {fileID: -8141311777399957015, guid: 6bcc5504f9b5fa548a5f0a1aa9003692, type: 3}
+    frames: 7
+  - sprite: {fileID: -5583939173592569567, guid: e384f3e862d03bc4dad481ec877066e5, type: 3}
+    frames: 7
+  - sprite: {fileID: 8027266418108888404, guid: a54b3922f51157a46a702b056d26d9b8, type: 3}
+    frames: 7
+  - sprite: {fileID: -3383475567324833634, guid: dafd2eb5bb42c4046b3f654f93c95d12, type: 3}
+    frames: 7
+  - sprite: {fileID: 2272503557558706466, guid: 638ab3cd05ef467498a4f5e672d2f619, type: 3}
+    frames: 7
+  - sprite: {fileID: -638692133683266807, guid: a485abe38dadba840b5e1ab2cfd09108, type: 3}
+    frames: 7
+  - sprite: {fileID: -3582430217285604377, guid: 759bb28f073f8714785beca305a4cea2, type: 3}
+    frames: 7
+  dandoStanby:
+  - sprite: {fileID: -633156466212579455, guid: 8617a040c3c31b944baad82bd2092dbe, type: 3}
+    frames: 7
+  - sprite: {fileID: -2276510386998188639, guid: 6db47977d281fac429a7e66acec6047f, type: 3}
+    frames: 7
+  - sprite: {fileID: 3785782904236820370, guid: aa329e59d2513b24d9fb99826970638d, type: 3}
+    frames: 7
+  - sprite: {fileID: 986534175386659673, guid: 74f56a44ec749c544bd82dc7acd6723b, type: 3}
+    frames: 7
+  dandoHold:
+  - sprite: {fileID: -9152383729436602683, guid: 8086e0d988939db4b875c1685ac196db, type: 3}
+    frames: 7
+  - sprite: {fileID: 1854504785661299545, guid: 62a1a9ae79bb95e41bac0f6958f84ec8, type: 3}
+    frames: 7
+  - sprite: {fileID: 7189726204927483417, guid: 49c2b2c8d205ca94fb182e30c4cf9e65, type: 3}
+    frames: 7
+  - sprite: {fileID: 7598439507981916142, guid: 6f4a64dbb6808cc46ad9c0ed54c2a3be, type: 3}
+    frames: 7
+  - sprite: {fileID: -2946082585207116742, guid: 9e2470fb288ebdf4fbbd5d1aedd5f53a, type: 3}
+    frames: 7
+  - sprite: {fileID: 2518251354062004439, guid: b4fe84435c4b13e41949454ac3ad1def, type: 3}
+    frames: 7
+  dandoAttack:
+  - sprite: {fileID: -7499924983645894410, guid: e9bd4004f30b8fc49b205ad7ee9ca188, type: 3}
+    frames: 7
+  - sprite: {fileID: -6220308893324002910, guid: e089353ec6e35c24d8bb54fbd32d1633, type: 3}
+    frames: 7
+  - sprite: {fileID: -1136920099409528446, guid: 76736acb1564a824ab11dc798d8533a3, type: 3}
+    frames: 7
+  - sprite: {fileID: 4286742596610011170, guid: e6e00d70e49775b45a8b12ba58e9cdec, type: 3}
+    frames: 7
+  - sprite: {fileID: -3344147528476609143, guid: 60170132d0472e54c9a2eebed22cc4df, type: 3}
+    frames: 7
+  - sprite: {fileID: 7626621711576835233, guid: 8a0444877080e334e9259cde7668a61e, type: 3}
+    frames: 7
+  - sprite: {fileID: 257457849352810522, guid: 5690ac8efda1d5f49b68b0e1e3be28d8, type: 3}
+    frames: 7
+  - sprite: {fileID: -6197097840226025584, guid: 24e45663db6b2874a8a9e00cdf7fa17c, type: 3}
+    frames: 7
+  - sprite: {fileID: 3494497106047957483, guid: 6b2a931f501657c4b8a35824d4029d3a, type: 3}
+    frames: 7
+  - sprite: {fileID: -6875200286329232194, guid: 29dca749ebb09034b8f445424ccaafda, type: 3}
+    frames: 7
+  - sprite: {fileID: -3068145572636712136, guid: 66d2c18ef34a1bd488ebf66b5064579e, type: 3}
+    frames: 7
+  - sprite: {fileID: 3123367119700666824, guid: 6f35fac60c6b17848bc25291309d76eb, type: 3}
+    frames: 7
+  - sprite: {fileID: -7832379205977315837, guid: d1d68dc6f15db5b4dbc93a9dd62b1f43, type: 3}
+    frames: 7
+  - sprite: {fileID: -5440524945580501884, guid: 6cb6b0fafa7c9804cb7135bff3762ef6, type: 3}
+    frames: 7
+  - sprite: {fileID: -7188220179099103438, guid: 4cdb57d38fd4f7f4589d66d66d162823, type: 3}
+    frames: 7
+  dandoScale: 0.35
+  dandoPosition: {x: 0, y: 0.1, z: 0}
 --- !u!1 &869698385
 GameObject:
   m_ObjectHideFlags: 0
@@ -1451,6 +1594,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 869698386}
+  - component: {fileID: 817528327}
   m_Layer: 0
   m_Name: Character Anchor
   m_TagString: Untagged
